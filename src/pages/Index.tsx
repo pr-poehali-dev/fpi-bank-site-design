@@ -87,40 +87,40 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-                <Icon name="TrendingUp" size={14} className="mr-1" />
-                Надежность и комфорт
+                <Icon name="Gamepad2" size={14} className="mr-1" />
+                Игровая валюта
               </Badge>
               
               <h1 className="text-6xl lg:text-7xl font-bold leading-tight text-foreground">
-                Ваш
+                Игровая
                 <br />
-                <span className="text-primary">идеальный</span>
+                <span className="text-primary">валюта</span>
                 <br />
-                банк
+                ФПИ
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                Современные решения для управления финансами. Без скрытых комиссий, с максимальным кэшбэком и круглосуточной поддержкой.
+                Пополняйте игровой счёт быстро и безопасно. Покупайте Shark Cards и получайте дополнительные бонусы при акциях.
               </p>
               
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-10 shadow-lg">
-                  Открыть карту
-                  <Icon name="ArrowRight" size={20} className="ml-2" />
+                  Купить Shark Card
+                  <Icon name="ShoppingCart" size={20} className="ml-2" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-10 border-2 hover:bg-secondary">
-                  Узнать больше
+                  Посмотреть пакеты
                 </Button>
               </div>
               
               <div className="grid grid-cols-3 gap-8 pt-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-1">3М+</div>
-                  <div className="text-sm text-muted-foreground">Клиентов</div>
+                  <div className="text-4xl font-bold text-primary mb-1">10М+</div>
+                  <div className="text-sm text-muted-foreground">Игроков</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-1">99.9%</div>
-                  <div className="text-sm text-muted-foreground">Uptime</div>
+                  <div className="text-4xl font-bold text-primary mb-1">↑ 35%</div>
+                  <div className="text-sm text-muted-foreground">Бонус</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary mb-1">24/7</div>
@@ -134,7 +134,7 @@ const Index = () => {
               <div className="relative">
                 <BankCard 
                   type="Premium" 
-                  imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/de02ef66-4d6a-42d6-a2a6-9abd1b018da9.jpg"
+                  imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/acd15cd7-9fa7-4223-9947-bcd6f9c6b227.jpg"
                 />
               </div>
             </div>
@@ -148,9 +148,9 @@ const Index = () => {
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
               Продукты
             </Badge>
-            <h2 className="text-5xl font-bold mb-6 text-foreground">Выберите карту</h2>
+            <h2 className="text-5xl font-bold mb-6 text-foreground">🦈 Shark Cards</h2>
             <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
-              Три тарифа для разных потребностей — от базового до премиального
+              Выберите пакет игровой валюты — от новичка до кита
             </p>
           </div>
           
@@ -158,27 +158,27 @@ const Index = () => {
             <div className="group">
               <BankCard 
                 type="Classic" 
-                imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/9637cd21-044f-442b-8b76-8b276117f517.jpg"
+                imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/d48d9e65-38d4-45c2-82e3-1c027f327222.jpg"
               />
               <Card className="mt-8 p-8 bg-card border-2 border-border group-hover:border-primary/50 transition-all hover:shadow-xl">
-                <h3 className="text-3xl font-bold mb-3 text-foreground">Classic</h3>
-                <p className="text-muted-foreground mb-6 text-lg">Для ежедневных покупок</p>
+                <h3 className="text-3xl font-bold mb-3 text-foreground">🦈 Tiger Shark</h3>
+                <p className="text-muted-foreground mb-6 text-lg">Базовый игровой пакет</p>
                 <div className="mb-8">
-                  <div className="text-4xl font-bold text-primary mb-1">0₽</div>
-                  <div className="text-sm text-muted-foreground">в месяц</div>
+                  <div className="text-4xl font-bold text-primary mb-1">200,000₽</div>
+                  <div className="text-sm text-muted-foreground">игровая валюта</div>
                 </div>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3">
                     <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">Кэшбэк 3% на все покупки</span>
+                    <span className="text-foreground">200,000 игровых денег</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">Бесплатное обслуживание</span>
+                    <span className="text-foreground">Мгновенное пополнение</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">Снятие без комиссии</span>
+                    <span className="text-foreground">Отлично для старта</span>
                   </li>
                 </ul>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
@@ -196,26 +196,26 @@ const Index = () => {
                 />
                 <Card className="mt-8 p-8 bg-card border-2 border-primary group-hover:border-primary transition-all shadow-xl">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-3xl font-bold text-foreground">Premium</h3>
+                    <h3 className="text-3xl font-bold text-foreground">🦈 Megalodon Shark</h3>
                     <Badge className="bg-primary text-white">Популярно</Badge>
                   </div>
-                  <p className="text-muted-foreground mb-6 text-lg">Максимум возможностей</p>
+                  <p className="text-muted-foreground mb-6 text-lg">Максимальная мощь</p>
                   <div className="mb-8">
-                    <div className="text-4xl font-bold text-primary mb-1">499₽</div>
-                    <div className="text-sm text-muted-foreground">в месяц</div>
+                    <div className="text-4xl font-bold text-primary mb-1">8,000,000₽</div>
+                    <div className="text-sm text-muted-foreground">игровая валюта</div>
                   </div>
                   <ul className="space-y-4 mb-8">
                     <li className="flex items-start gap-3">
                       <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground">Кэшбэк 10% на все категории</span>
+                      <span className="text-foreground">8,000,000 игровых денег</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground">Персональный менеджер</span>
+                      <span className="text-foreground">+35% бонус при акции</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground">Страхование покупок</span>
+                      <span className="text-foreground">Лучшее соотношение цены</span>
                     </li>
                   </ul>
                   <Button className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
@@ -228,27 +228,27 @@ const Index = () => {
             <div className="group">
               <BankCard 
                 type="Black" 
-                imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/60359903-1e7d-4f96-9bb1-80762f5f2b3c.jpg"
+                imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/b034d709-954c-431e-8369-3a78a9818a20.jpg"
               />
               <Card className="mt-8 p-8 bg-card border-2 border-border group-hover:border-primary/50 transition-all hover:shadow-xl">
-                <h3 className="text-3xl font-bold mb-3 text-foreground">Black</h3>
-                <p className="text-muted-foreground mb-6 text-lg">Элитный сервис</p>
+                <h3 className="text-3xl font-bold mb-3 text-foreground">🦈 Great White Shark</h3>
+                <p className="text-muted-foreground mb-6 text-lg">Для опытных игроков</p>
                 <div className="mb-8">
-                  <div className="text-4xl font-bold text-primary mb-1">2999₽</div>
-                  <div className="text-sm text-muted-foreground">в месяц</div>
+                  <div className="text-4xl font-bold text-primary mb-1">1,250,000₽</div>
+                  <div className="text-sm text-muted-foreground">игровая валюта</div>
                 </div>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3">
                     <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">Кэшбэк 20% без ограничений</span>
+                    <span className="text-foreground">1,250,000 игровых денег</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">Консьерж-сервис 24/7</span>
+                    <span className="text-foreground">Быстрое пополнение счёта</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="Check" size={20} className="text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">VIP залы в аэропортах</span>
+                    <span className="text-foreground">Популярный выбор</span>
                   </li>
                 </ul>
                 <Button className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white text-lg py-6">
@@ -266,7 +266,7 @@ const Index = () => {
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
               Отзывы
             </Badge>
-            <h2 className="text-5xl font-bold mb-6 text-foreground">Что говорят клиенты</h2>
+            <h2 className="text-5xl font-bold mb-6 text-foreground">Отзывы игроков</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -277,15 +277,15 @@ const Index = () => {
                 ))}
               </div>
               <p className="text-foreground mb-6 text-lg leading-relaxed">
-                "Лучший банк! Быстрые переводы, удобное приложение и отличная поддержка. Рекомендую всем!"
+                "Купил Megalodon Shark и сразу купил себе яхту и бизнес! Лучшее вложение!"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">Анна К.</div>
-                  <div className="text-sm text-muted-foreground">Клиент 2 года</div>
+                  <div className="font-semibold text-foreground">ProGamer2024</div>
+                  <div className="text-sm text-muted-foreground">Игрок 2 года</div>
                 </div>
               </div>
             </Card>
@@ -297,15 +297,15 @@ const Index = () => {
                 ))}
               </div>
               <p className="text-foreground mb-6 text-lg leading-relaxed">
-                "Кэшбэк действительно работает! За месяц вернул 3000₽. Никаких подводных камней."
+                "Бонус +35% при акции — это бомба! Получил на 3 миллиона больше."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">Дмитрий С.</div>
-                  <div className="text-sm text-muted-foreground">Клиент 1 год</div>
+                  <div className="font-semibold text-foreground">xXDimaXx</div>
+                  <div className="text-sm text-muted-foreground">Игрок 1 год</div>
                 </div>
               </div>
             </Card>
@@ -317,15 +317,15 @@ const Index = () => {
                 ))}
               </div>
               <p className="text-foreground mb-6 text-lg leading-relaxed">
-                "Премиум карта стоит каждого рубля. Консьерж решил все вопросы с отелем за 5 минут!"
+                "Быстрое пополнение, деньги на счёте буквально за минуту. Очень удобно!"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">Елена М.</div>
-                  <div className="text-sm text-muted-foreground">Клиент 3 года</div>
+                  <div className="font-semibold text-foreground">Lena_Killer</div>
+                  <div className="text-sm text-muted-foreground">Игрок 3 года</div>
                 </div>
               </div>
             </Card>
@@ -336,7 +336,7 @@ const Index = () => {
       <section id="about" className="py-24 px-6 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 text-foreground">Почему выбирают нас</h2>
+            <h2 className="text-5xl font-bold mb-6 text-foreground">Преимущества Shark Cards</h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -344,9 +344,9 @@ const Index = () => {
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
                 <Icon name="Shield" className="text-primary" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-foreground">Безопасность</h3>
+              <h3 className="text-2xl font-bold mb-3 text-foreground">Безопасно</h3>
               <p className="text-muted-foreground text-lg">
-                Защита данных по стандартам PCI DSS Level 1
+                Официальные Shark Cards с защитой платежей
               </p>
             </Card>
             
@@ -354,9 +354,9 @@ const Index = () => {
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
                 <Icon name="Zap" className="text-primary" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-foreground">Быстро</h3>
+              <h3 className="text-2xl font-bold mb-3 text-foreground">Мгновенно</h3>
               <p className="text-muted-foreground text-lg">
-                Моментальные переводы между картами
+                Деньги на игровом счёте за 1 минуту
               </p>
             </Card>
             
@@ -364,9 +364,9 @@ const Index = () => {
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
                 <Icon name="Percent" className="text-primary" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-foreground">Выгодно</h3>
+              <h3 className="text-2xl font-bold mb-3 text-foreground">Бонусы</h3>
               <p className="text-muted-foreground text-lg">
-                До 20% кэшбэка на покупки
+                +35% к сумме при акциях
               </p>
             </Card>
             
@@ -386,14 +386,14 @@ const Index = () => {
       <section className="py-32 px-6 bg-gradient-to-br from-primary to-accent text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-5xl lg:text-6xl font-bold mb-8">
-            Готовы начать?
+            Нужны деньги в игре?
           </h2>
           <p className="text-2xl mb-12 max-w-2xl mx-auto opacity-90">
-            Оформите карту за 5 минут онлайн и получите 1000₽ на счет
+            Купите Shark Card и получите миллионы игровой валюты прямо сейчас
           </p>
           <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-xl px-16 py-8 shadow-2xl">
-            Открыть карту сейчас
-            <Icon name="ArrowRight" size={24} className="ml-3" />
+            Купить Shark Card
+            <Icon name="ShoppingCart" size={24} className="ml-3" />
           </Button>
         </div>
       </section>
