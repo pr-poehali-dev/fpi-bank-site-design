@@ -4,27 +4,34 @@ import Icon from "@/components/ui/icon";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 
-const BankCard = ({ type, gradient, icon }: { type: string; gradient: string; icon: string }) => {
+const BankCard = ({ type, imageUrl }: { type: string; imageUrl: string }) => {
   const [isHovered, setIsHovered] = useState(false);
   
   return (
     <div 
-      className={`relative w-full aspect-[1.586/1] rounded-2xl p-6 transition-all duration-500 cursor-pointer ${gradient} shadow-xl`}
+      className="relative w-full aspect-[1.586/1] rounded-2xl overflow-hidden transition-all duration-500 cursor-pointer shadow-2xl"
       style={{
         transform: isHovered ? 'translateY(-8px) scale(1.02)' : 'translateY(0) scale(1)',
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative h-full flex flex-col justify-between">
+      <img 
+        src={imageUrl} 
+        alt={`${type} card`}
+        className="w-full h-full object-cover"
+      />
+      
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+      
+      <div className="absolute inset-0 p-6 flex flex-col justify-between">
         <div className="flex justify-between items-start">
-          <div className="text-white text-lg font-bold tracking-wider">ФПИ</div>
-          <Icon name={icon as any} className="text-white/90" size={36} />
+          <div className="text-white text-2xl font-bold tracking-wider drop-shadow-lg">ФПИ</div>
         </div>
         
         <div>
-          <div className="text-white/80 text-xs mb-2 tracking-wide">Номер карты</div>
-          <div className="text-white font-mono text-xl tracking-wider mb-6">
+          <div className="text-white/90 text-xs mb-2 tracking-wide drop-shadow">Номер карты</div>
+          <div className="text-white font-mono text-xl tracking-[0.3em] mb-6 drop-shadow-lg">
             {type === "Black" ? "•••• •••• •••• 0001" : 
              type === "Premium" ? "•••• •••• •••• 9999" : 
              "•••• •••• •••• 5678"}
@@ -32,18 +39,16 @@ const BankCard = ({ type, gradient, icon }: { type: string; gradient: string; ic
           
           <div className="flex justify-between items-end">
             <div>
-              <div className="text-white/80 text-xs mb-1">Владелец</div>
-              <div className="text-white font-semibold tracking-wide">ИВАН ИВАНОВ</div>
+              <div className="text-white/90 text-xs mb-1 drop-shadow">Владелец</div>
+              <div className="text-white font-semibold tracking-wide drop-shadow-lg">ИВАН ИВАНОВ</div>
             </div>
             <div className="text-right">
-              <div className="text-white/80 text-xs mb-1">Срок</div>
-              <div className="text-white font-semibold">12/28</div>
+              <div className="text-white/90 text-xs mb-1 drop-shadow">Срок</div>
+              <div className="text-white font-semibold drop-shadow-lg">12/28</div>
             </div>
           </div>
         </div>
       </div>
-      
-      <div className="absolute bottom-4 right-4 w-20 h-20 rounded-full bg-white/10 blur-3xl"></div>
     </div>
   );
 };
@@ -127,10 +132,9 @@ const Index = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl rounded-full"></div>
               <div className="relative">
-                <img 
-                  src="/placeholder.svg" 
-                  alt="Мобильное приложение" 
-                  className="w-full max-w-md mx-auto drop-shadow-2xl"
+                <BankCard 
+                  type="Premium" 
+                  imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/de02ef66-4d6a-42d6-a2a6-9abd1b018da9.jpg"
                 />
               </div>
             </div>
@@ -154,8 +158,7 @@ const Index = () => {
             <div className="group">
               <BankCard 
                 type="Classic" 
-                gradient="bg-gradient-to-br from-blue-500 to-blue-700"
-                icon="CreditCard"
+                imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/9637cd21-044f-442b-8b76-8b276117f517.jpg"
               />
               <Card className="mt-8 p-8 bg-card border-2 border-border group-hover:border-primary/50 transition-all hover:shadow-xl">
                 <h3 className="text-3xl font-bold mb-3 text-foreground">Classic</h3>
@@ -189,8 +192,7 @@ const Index = () => {
               <div className="relative">
                 <BankCard 
                   type="Premium" 
-                  gradient="bg-gradient-to-br from-purple-600 to-purple-800"
-                  icon="Gem"
+                  imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/de02ef66-4d6a-42d6-a2a6-9abd1b018da9.jpg"
                 />
                 <Card className="mt-8 p-8 bg-card border-2 border-primary group-hover:border-primary transition-all shadow-xl">
                   <div className="flex justify-between items-start mb-3">
@@ -226,8 +228,7 @@ const Index = () => {
             <div className="group">
               <BankCard 
                 type="Black" 
-                gradient="bg-gradient-to-br from-gray-900 to-black"
-                icon="Crown"
+                imageUrl="https://cdn.poehali.dev/projects/b76f1abe-44c6-4373-9987-04dd2f22d880/files/60359903-1e7d-4f96-9bb1-80762f5f2b3c.jpg"
               />
               <Card className="mt-8 p-8 bg-card border-2 border-border group-hover:border-primary/50 transition-all hover:shadow-xl">
                 <h3 className="text-3xl font-bold mb-3 text-foreground">Black</h3>
